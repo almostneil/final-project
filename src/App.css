@@ -1,0 +1,24 @@
+body {
+  font-family: proxima-nova, sans-serif;
+}
+
+.wizard-body {
+  min-height: calc(100vh - 85px);
+}
+
+.red-box-shadow-1 {
+  box-shadow: 0 0 0 1px #ff4238;
+}
+
+::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+::-moz-placeholder {
+  color: #c7c7c7;
+}
+:-ms-input-placeholder {
+  color: #c7c7c7;
+}
+:-moz-placeholder {
+  color: #c7c7c7;
+}

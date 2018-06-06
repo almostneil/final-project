@@ -1,0 +1,564 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"label",
+				"labelMarkup"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"obj",
+				"obj"
+			],
+			[
+				"selec",
+				"selectedSupplementObj"
+			],
+			[
+				"black",
+				"black-swan-yoga"
+			],
+			[
+				"categ",
+				"categorySlug"
+			],
+			[
+				"sty",
+				"styledWrap"
+			],
+			[
+				"can",
+				"cancellation-policy"
+			],
+			[
+				"max-wi",
+				"max-width-1"
+			],
+			[
+				"get",
+				"getRecipeJSON"
+			],
+			[
+				"_html",
+				"_html_minutes"
+			],
+			[
+				"bas",
+				"basicItems"
+			],
+			[
+				"for",
+				"for\tfor (... {... Custom Improved For-Loop"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"impl",
+				"implement_cat_obj"
+			],
+			[
+				"implement_cat",
+				"implement_cat_slug"
+			],
+			[
+				"Print",
+				"print_r"
+			],
+			[
+				"Reac",
+				"ReactDOM"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"word",
+				"word-spacing"
+			],
+			[
+				"font-size",
+				"font-size-sm"
+			],
+			[
+				"appre",
+				"apparelVideo"
+			],
+			[
+				"apparel",
+				"apparelVideo"
+			],
+			[
+				"aparel",
+				"apparelVideo"
+			],
+			[
+				"compo",
+				"components-import"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 361.0,
+		"last_filter": "title",
+		"selected_items":
+		[
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"tritle",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"titl",
+				"Convert Case: Title Case"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"t",
+				"Convert Case: Title Case"
+			],
+			[
+				"form",
+				"Format CSS: Compressed"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"enco",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"autop",
+				"Autoprefix CSS"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"package res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"set hp",
+				"Set Syntax: PHP"
+			],
+			[
+				"upperc",
+				"Convert Case: Upper Case"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"set babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"slug",
+				"Slugify"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"tit",
+				"Convert Case: Title Case"
+			],
+			[
+				"uppe",
+				"Convert Case: Upper Case"
+			],
+			[
+				"uc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"defau",
+				"Minify::Default File Settings"
+			],
+			[
+				"mini",
+				"Minify::User File Settings"
+			],
+			[
+				"slu",
+				"Slugify"
+			],
+			[
+				"spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"snipp",
+				"Snippet: echo"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"for",
+				"Format CSS: Compact"
+			],
+			[
+				"fo",
+				"Format CSS: Compact"
+			],
+			[
+				"f",
+				"Format CSS: Compact"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/neil/jsdev/devin2"
+	],
+	"file_history":
+	[
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/templates/pro-team/listing.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-own-the-day.php",
+		"/Users/neil/Onnit/Daily Files/2018/201805/20180503/newS3password.txt",
+		"/Users/neil/jsdev/devin/src/App.css",
+		"/Users/neil/jsdev/devin/src/components/ColumnWrapper.js",
+		"/Users/neil/jsdev/devin/src/store.js",
+		"/Users/neil/jsdev/devin/src/components/WhichSupplementForm.js",
+		"/Users/neil/jsdev/devin/src/components/ProgressBar.js",
+		"/Users/neil/jsdev/devin/src/components/FancyRadioGroup.js",
+		"/Users/neil/jsdev/devin/src/helpers/index.js",
+		"/Users/neil/jsdev/devin/src/components/FancyRadio.js",
+		"/Users/neil/jsdev/devin/src/App.js",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/templates/semi-annual-sale.php",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/public/assets/base.css",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/src/index.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/src/state.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/src/components/NewEventPage.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/server/index.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/src/components/EventForm.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/src/components/Sidebar.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/server/routes/EventItemRoutes.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/server/controllers/EventItemsController.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/server/models/EventItem.js",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/.gitignore",
+		"/Users/neil/src/onnit/allit/apps/onnit-events/package.json",
+		"/Users/neil/jsdev/advanced/advanced-express-practice/client/src/App.js",
+		"/Users/neil/jsdev/advanced/advanced-express-practice/client/src/AppContainer.js",
+		"/Users/neil/jsdev/advanced/advanced-express-practice/client/src/reducers/index.js",
+		"/Users/neil/jsdev/advanced/advanced-express-practice/client/src/store.js",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-ketobox-form.php",
+		"/Users/neil/Local Sites/black-swan-yoga/app/public/wp-content/themes/blackswanyoga/page-schedule.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-semi-annual-sale.php",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/single-feature.php",
+		"/Users/neil/jsdev/mobx-crud-example/.env",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/page/egn/egn.less",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-egn.php",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/inc/meta-boxes/recipes/recipes.php",
+		"/Users/neil/Onnit/Daily Files/2018/201804/20180404/date_available.sql",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/common/basscss/_border.less",
+		"/Users/neil/jsdev/advanced/advanced-express-practice/README.md",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/page/division-accessories/division-accessories.less",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/script/product-page.js",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/templates/product-page-new/buy-box.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-division-duffle.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-division-dopp-kit.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-division-daypack.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/req/slug-based-info.php",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/inc/meta-boxes/recipes/recipes-admin.css",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/inc/meta-boxes/recipes/recipes-admin.js",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/functions.php",
+		"/Users/neil/Library/Application Support/Sublime Text 3/Packages/JavaScript/Snippets/for-()-{}-(faster).sublime-snippet",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/inc/meta-boxes/recipes/recipes.js",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/page/academy/academy-btn-bar.less",
+		"/Users/neil/jsdev/advanced/advanced-express-practice/client/src/actions/index.js",
+		"/Users/neil/jsdev/advanced/advanced-express-practice/client/src/components/Vehicle.js",
+		"/Users/neil/jsdev/advanced/advanced-express-practice/client/src/containers/VehiclesContainer.js",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/common/basscss/_border-responsive.less",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/common/basscss/_border-colors.less",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/common/basscss/_blend-modes.less",
+		"/Users/neil/src/neil/public/styles/base.css",
+		"/Users/neil/src/neil/src/styles/_flexbox.scss",
+		"/Users/neil/src/neil/src/styles/base.scss",
+		"/Users/neil/src/neil/src/styles/_position.scss",
+		"/Users/neil/src/neil/src/styles/_layout.scss",
+		"/Users/neil/src/neil/layouts/partials/header.html",
+		"/Users/neil/src/neil/layouts/partials/footer.html",
+		"/Users/neil/src/neil/setup.js",
+		"/Users/neil/src/neil/layouts/project.html",
+		"/Users/neil/src/neil/src/projects/apparel-product-page.html",
+		"/Users/neil/src/neil/src/styles/_typography.scss",
+		"/Users/neil/src/neil/src/styles/variables/_typography.scss",
+		"/Users/neil/src/neil/src/styles/variables/_index.scss",
+		"/Users/neil/src/neil/src/styles/_variables.scss",
+		"/Users/neil/src/neil/src/pages/resume.md",
+		"/Users/neil/src/neil/layouts/index.html",
+		"/Users/neil/src/neil/src/about.md",
+		"/Users/neil/src/neil/package.json",
+		"/Users/neil/src/neil/neil.sublime-project",
+		"/Users/neil/src/neil/layouts/page.html",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-10-things-every-man-must-do-before-he-dies.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-pro-team.php",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/partials/post-header.php",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/page-cert-team.php",
+		"/Users/neil/src/onnit/allit/academy/wp-content/themes/onnitnetwork/page-fitness.php",
+		"/Users/neil/jsdev/advanced/advanced-redux-fetch-practice/src/components/CollapsableMapper.js",
+		"/Users/neil/Onnit/Daily Files/2018/201803/20180301/scrap.txt",
+		"/Users/neil/src/onnit/allit/apps/academy-homepage-builder/academy-homepage-builder.sublime-project",
+		"/Users/neil/src/onnit/allit/apps/academy-homepage-builder/src/components/Tile.js",
+		"/Users/neil/src/onnit/allit/cart/tools/vm/summarize-apparel-2.php",
+		"/Users/neil/src/onnit/devops/docker/.allit.env",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/11_denim-pant.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/10_knit-blazer.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/09_samurai-sweatshirt.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/08_jogger.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/07_doberman-t-shirt.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/06_bull-terrier-tank.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/05_mckenna-t-shirt.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/04_am-logo-t-shirt.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/03_asymmetric-tee.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/02_hi-lo-t-shirt.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/01_crepe-weave-t-shirt.js",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/foo.txt",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180220/apparel_js/training-tech-fleece-28-jogger.js",
+		"/Users/neil/src/onnit/allit/apps/academy-homepage-builder/.babelrc",
+		"/Users/neil/src/onnit/allit/apps/academy-homepage-builder/webpack.config.js",
+		"/Users/neil/src/onnit/allit/apps/academy-homepage-builder/package.json",
+		"/Users/neil/.bash_profile",
+		"/Users/neil/src/onnit/allit/views/homepage/firehose/b-no-text.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/script/firehose-extras.js",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/script/onnit.js",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-firehose.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/page/kettlebells/what-are-kettlebells.less",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/page/battle-ropes/battle-ropes.less",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/page/xpro/xpro.less",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-xpro.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/page-getonnit.php",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/_legacy/xpro.less",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/templates/product-page-new/addl-content.php",
+		"/Users/neil/Onnit/Daily Files/2018/201802/20180215/wholesale_savory_emct_email.html",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/footer.php",
+		"/Users/neil/src/onnit/devops/docker/.env",
+		"/Users/neil/src/onnit/allit/wp-content/themes/onnit/styles/src/common/basscss/_type-scale-v2.less",
+		"/Users/neil/jsdev/advanced/advanced-homework-2/src/components/Footer.js",
+		"/Users/neil/Library/Application Support/Sublime Text 3/Packages/User/Minify.sublime-settings",
+		"/Users/neil/Library/Application Support/Sublime Text 3/Packages/Minify/Minify.sublime-settings",
+		"/Users/neil/Local Sites/black-swan-yoga/app/public/wp-content/themes/blackswanyoga/partials/austin-ytt-200hr.php",
+		"/Users/neil/Local Sites/black-swan-yoga/app/public/wp-content/themes/blackswanyoga/partials/austin-ytt-trainers.php",
+		"/Users/neil/Local Sites/black-swan-yoga/app/public/wp-content/themes/blackswanyoga/page-ytt-austin-300hr.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "devin2.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
