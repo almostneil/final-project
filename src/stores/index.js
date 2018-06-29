@@ -1,16 +1,17 @@
 import { observable, computed, action } from 'mobx';
+import gifts from './gifts';
+import supplements from './supplements';
+import fakeAmazonOrders from './fakeAmazonOrders';
 
 class Store {
+
+  giftOptions = gifts;
+  supplements = supplements;
+  fakeAmazonOrders = fakeAmazonOrders;
+
   @observable fields = {
 
     // step 1
-    name: {
-      value: '',
-      isValid: null,
-      isDirty: null,
-      isPristine: true,
-      errorMessage: null
-    },
     email: {
       value: '',
       isValid: null,
@@ -27,14 +28,7 @@ class Store {
     },
 
     // step 2
-    product: {
-      value: '',
-      isValid: null,
-      isDirty: null,
-      isPristine: true,
-      errorMessage: null
-    },
-    howLongTaking: {
+    gift: {
       value: '',
       isValid: null,
       isDirty: null,
@@ -42,7 +36,70 @@ class Store {
       errorMessage: null
     },
 
-    // step 3
+    // step 3 - shipping address
+    firstName: {
+      value: '',
+      isValid: null,
+      isDirty: null,
+      isPristine: true,
+      errorMessage: null
+    },
+    lastName: {
+      value: '',
+      isValid: null,
+      isDirty: null,
+      isPristine: true,
+      errorMessage: null
+    },
+    address1: {
+      value: '',
+      isValid: null,
+      isDirty: null,
+      isPristine: true,
+      errorMessage: null
+    },
+    address2: {
+      value: '',
+      isRequired: false,
+      isValid: null,
+      isDirty: null,
+      isPristine: true,
+      errorMessage: null
+    },
+    city: {
+      value: '',
+      isValid: null,
+      isDirty: null,
+      isPristine: true,
+      errorMessage: null
+    },
+    state: {
+      value: '',
+      isValid: null,
+      isDirty: null,
+      isPristine: true,
+      errorMessage: null
+    },
+    zip: {
+      value: '',
+      isValid: null,
+      isDirty: null,
+      isPristine: true,
+      errorMessage: null
+    },
+
+    // step ?
+    // trying to get this from the Amazon Order Number
+
+    // supplement: {
+    //   value: '',
+    //   isValid: null,
+    //   isDirty: null,
+    //   isPristine: true,
+    //   errorMessage: null
+    // },
+
+    // step 4
     rating: {
       value: 0,
       isValid: null,
@@ -57,8 +114,12 @@ class Store {
       errorMessage: null
     },
 
-    // step 4
+    // step 5
     hasCopiedReview: {
+      value: false,
+      isValid: null
+    },
+    hasClickedAmazon: {
       value: false,
       isValid: null
     }
@@ -93,10 +154,16 @@ class Store {
         isValid = re.test(value);
         if (!isValid) errorMessage = 'Please enter a valid Amazon Order ID';
         break;
+      case 'address2':
+        isValid = true; // automatically valid, i.e. not required
+        break;
       default:
         isValid = (value.length > 0);
         if (!isValid) errorMessage = 'Please complete this field before continuing';
         break;
+    }
+    if (this.fields[name].isRequired === false) {
+      isValid = true;
     }
     this.fields[name].isValid = isValid;
     this.fields[name].errorMessage = errorMessage;
@@ -108,43 +175,37 @@ class Store {
     this.fields.rating.isValid = true;
   }
 
-  @action toggleCopiedReview = () => {
-    this.fields.hasCopiedReview.value = true;
-    this.fields.hasCopiedReview.isValid = true;
+  @action toggleUiState = (field, value) => {
+    console.log(field, value);
+
+    this.fields[field].value = value;
+    this.fields[field].isValid = value;
+
+    console.log(this.fields[field]);
   }
-
-
-
-  @computed get progress() {
-    const keys = Object.keys(this.fields);
-    const totalFields = keys.length;
-    let completedFields = 0;
-
-    for (let key of keys) {
-      if (this.fields[key].isValid) {
-        completedFields++;
-      }
-    }
-
-    return Math.round(completedFields/totalFields * 100);
-  }
-
-
 
   @observable currentStepIndex = 0;
+  totalSteps = 6;
 
-  stepsArr = ['step-1', 'step-2', 'step-3', 'step-4'];
+  @computed get progressPercent() {
+    const standInNum = this.currentStepIndex + 1; // account for zero-indexing
+    const percent = standInNum/this.totalSteps * 100;
+    return percent + '%';
+  }
+
+  stepsArr = ['step-1', 'step-2', 'step-3', 'step-4', 'step-5', 'step-6'];
+
   stepComponents = [
-    ['name', 'email', 'orderNumber'],
-    ['product', 'howLongTaking'],
-    ['rating', 'review']
+    ['email', 'orderNumber'],
+    ['gift'],
+    ['firstName', 'lastName', 'address1', 'city', 'state', 'zip'],
+    ['rating', 'review'],
+    ['hasCopiedReview', 'hasClickedAmazon']
   ];
 
   @action setCurrentStepIndex = (index) => {
     this.currentStepIndex = index;
   }
-
-
 
   @computed get stepObj() {
     const next = (this.stepsArr[this.currentStepIndex + 1])
@@ -158,17 +219,24 @@ class Store {
     return { next, previous };
   }
 
-
   @computed get stepCompleted() {
     const Arr2Check = this.stepComponents[this.currentStepIndex];
-    if (Arr2Check) {
-      for (let x of Arr2Check) {
-        if (!this.fields[x].isValid) {
-          return false;
-        }
-      }
+    if (!Arr2Check) return false;
+
+    let numRequired = Arr2Check.length;
+    let numCompleted = 0;
+
+    for (let x of Arr2Check) {
+      if (this.fields[x].isValid) numCompleted++;
     }
-    return true;
+
+    // if it's a digital product, we don't need to collect their shipping address
+    // ...so the num required answers is 0
+    if (this.currentStepIndex === 2 && this.giftType === 'digital') {
+      numRequired = 0;
+    }
+
+    return (numCompleted >= numRequired);
   }
 
   @action makeFieldsDirty = (e) => {
@@ -180,153 +248,38 @@ class Store {
     }
   }
 
-  @computed get productImage() {
-    return (this.fields.product.value !== '')
-      ? `https://onnits3.imgix.net/authority/${this.fields.product.value}.png?auto=format&ver=&w=735`
+  @computed get giftImage() {
+    return (this.fields.gift.value !== '')
+      ? `https://onnits3.imgix.net/authority/${this.fields.gift.value}.png?auto=format&ver=&w=735`
+      : '/assets/generic-gift.svg';
+  }
+
+  @computed get supplementImage() {
+    return (this.whichSupp !== null)
+      ? `https://onnits3.imgix.net/authority/${this.whichSupp.id}.png?auto=format&ver=&w=735`
       : '/assets/generic-supplement.svg';
   }
 
-  @computed get supplementName() {
-    if (this.fields.product.value === '') return '';
-    let supplementObj = this.supplements.find((x) => x.id == this.fields.product.value).name;
-    return supplementObj;
+  @computed get supplementReviewLink() {
+    return (this.whichSupp !== null)
+      ? `https://www.amazon.com/review/create-review?asin=${this.whichSupp.asin}`
+      : 'https://www.amazon.com/review/create-review';
   }
 
-  supplements = [
-    {
-      "id": "32",
-      "name": "Alpha BRAIN (30ct)",
-      "authority_id": "32"
-    },
-    {
-      "id": "46",
-      "name": "New MOOD (30ct)",
-      "authority_id": "46"
-    },
-    {
-      "id": "55",
-      "name": "Shroom TECH Immune (30ct)",
-      "authority_id": "55"
-    },
-    {
-      "id": "107",
-      "name": "Alpha BRAIN (90ct)",
-      "authority_id": "107"
-    },
-    {
-      "id": "167",
-      "name": "Spirulina and Chlorella (80 tabs)",
-      "authority_id": "167"
-    },
-    {
-      "id": "256",
-      "name": "Total Primate Care (15 day supply)",
-      "authority_id": "256"
-    },
-    {
-      "id": "322",
-      "name": "Krill Oil (60ct)",
-      "authority_id": "322"
-    },
-    {
-      "id": "413",
-      "name": "DigesTech (60ct)",
-      "authority_id": "413"
-    },
-    {
-      "id": "573",
-      "name": "Shroom TECH Sport (90ct)",
-      "authority_id": "573"
-    },
-    {
-      "id": "628",
-      "name": "ViruTech (60ct)",
-      "authority_id": "628"
-    },
-    {
-      "id": "638",
-      "name": "Shroom TECH Immune (90ct)",
-      "authority_id": "638"
-    },
-    {
-      "id": "2056",
-      "name": "Alpha BRAIN Instant - Natural Peach (30ct box)",
-      "authority_id": "2056"
-    },
-    {
-      "id": "2743",
-      "name": "Vitamin D3 Spray in MCT Oil (24mL)",
-      "authority_id": "2743"
-    },
-    {
-      "id": "2752",
-      "name": "Onnit Total Gut Health (15ct box)",
-      "authority_id": "2752"
-    },
-    {
-      "id": "2826",
-      "name": "Total Strength + Performance - Strawberry Lemonade (312g tub)",
-      "authority_id": "2826"
-    },
-    {
-      "id": "2887",
-      "name": "Earth Grown Nutrients - Black Cherry (200g tub)",
-      "authority_id": "2887"
-    },
-    {
-      "id": "2888",
-      "name": "Earth Grown Nutrients - Lemon Mint (200g tub)",
-      "authority_id": "2888"
-    },
-    {
-      "id": "2981",
-      "name": "Key Minerals (120ct)",
-      "authority_id": "2981"
-    },
-    {
-      "id": "2982",
-      "name": "New MOOD (60ct)",
-      "authority_id": "2982"
-    },
-    {
-      "id": "3012",
-      "name": "Melatonin Spray - Mint (1 fl. oz.)",
-      "authority_id": "3012"
-    },
-    {
-      "id": "3013",
-      "name": "Melatonin Spray - Lavender (1 fl. oz.)",
-      "authority_id": "3013"
-    },
-    {
-      "id": "3482",
-      "name": "Fulvic Minerals Concentrate - Original (32oz)",
-      "authority_id": "3482"
-    },
-    {
-      "id": "3483",
-      "name": "Fulvic Minerals Concentrate - Mocha (32oz)",
-      "authority_id": "3483"
-    },
-    {
-      "id": "3548",
-      "name": "Onnit Joint Oil - Tangerine Dream (12oz)",
-      "authority_id": "3548"
-    },
-    {
-      "id": "4448",
-      "name": "Shroom TECH Sport (28ct)",
-      "authority_id": "4448"
-    },
-    {
-      "id": "4449",
-      "name": "Shroom TECH Sport (84ct)",
-      "authority_id": "4449"
-    }
-  ];
+  @computed get giftType() {
+    if (this.fields.gift.value === '') return 'basic';
+    let giftObj = this.giftOptions.find((x) => x.id === this.fields.gift.value);
+    return giftObj.type;
+  }
+
+  @computed get whichSupp() {
+    if (this.fields.orderNumber.value === '') return null;
+    let order = this.fakeAmazonOrders.find((x) => x.orderNumber === this.fields.orderNumber.value);
+    let supplementObj = this.supplements.find((x) => x.id === order.productId);
+    return supplementObj;
+  }
   
 }
 
 const store = new Store();
-
 export default store;

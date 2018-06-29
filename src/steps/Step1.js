@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import { Column, ColumnWrapper } from '../layout/ColumnWrapper';
-import ProductImage from '../layout/ProductImage';
 import Input from '../form/Input';
 import MaskedInput from '../form/MaskedInput';
 import PrevNext from '../form/PrevNext';
@@ -29,21 +28,8 @@ class Step1 extends Component {
         <Column className="bg-white my5 md-down-p2-1/2 md-p3">
         
           <p className="md-down-fz5 md-fz6 bold mt0 mb2 lh1">
-            Share your experience with us and receive a free coupon!
+            Claim your free gift
           </p>
-
-          <Input
-            label="Name"
-            name="name"
-            value={fields.name.value}
-            isValid={fields.name.isValid}
-            isDirty={fields.name.isDirty}
-            isPristine={fields.name.isPristine}
-            errorMessage={fields.name.errorMessage}
-            onChange={onChange}
-            onFocus={onFocus}
-            onBlur={onBlur}
-          />
 
           <Input
             label="Email"
@@ -60,7 +46,7 @@ class Step1 extends Component {
           />
           
           <MaskedInput
-            label="Order Number"
+            label="Amazon Order Number"
             name="orderNumber"
             options={{blocks: [3,7,7], delimiter: '-', numericOnly: true}}
             placeholder="000-0000000-0000000"

@@ -10,32 +10,27 @@ import Step1 from './steps/Step1';
 import Step2 from './steps/Step2';
 import Step3 from './steps/Step3';
 import Step4 from './steps/Step4';
+import Step5 from './steps/Step5';
+import Step6 from './steps/Step6';
 
 
 @inject('store')
 @observer
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-
-    console.log(this.props.store);
-
-    let { progress } = this.props.store;
-
     return (
       <div className="App  max-width-6 mx-auto">
         <Header />
-        <ProgressBar progress={progress} />
+        <ProgressBar progressPercent={this.props.store.progressPercent} />
         <BrowserRouter>
           <Switch>
             <Route path="/step-1" component={Step1} />
             <Route path="/step-2" component={Step2} />
             <Route path="/step-3" component={Step3} />
             <Route path="/step-4" component={Step4} />
+            <Route path="/step-5" component={Step5} />
+            <Route path="/step-6" component={Step6} />
             <Route component={Step1} />
           </Switch>
         </BrowserRouter>

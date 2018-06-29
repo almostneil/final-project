@@ -22,6 +22,7 @@ function StarRating(props) {
             name={props.name}
             value={props.value}
             onStarClick={(nextValue, prevValue, name) => props.onStarClick(nextValue)}
+            emptyStarColor="#dedede"
           />
         </div>
       </div>

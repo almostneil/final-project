@@ -23,6 +23,7 @@ class PrevNext extends Component {
   render() {
 
     const { stepObj, stepCompleted, makeFieldsDirty } = this.props.store;
+    console.log(stepObj, stepCompleted);
 
     return (
       <div>

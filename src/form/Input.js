@@ -1,13 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 
-let getInputGroupClasses = ({isDirty, hasFloatingLabel}) => classNames('input-group', {
+let getInputGroupClasses = ({isDirty, hasFloatingLabel, inputGroupClass}) => classNames('input-group', inputGroupClass, {
   'is-dirty': isDirty,
   'has-floating-label': hasFloatingLabel
 });
 
-let getErrorClasses = ({isValid, isPristine}) => classNames({
-  'red-box-shadow-1': !isValid && !isPristine,
+let getErrorClasses = ({isRequired, isValid, isPristine}) => classNames({
+  'red-box-shadow-1': isRequired && !isValid && !isPristine,
 });
 
 let getErrorMessage = ({isValid, isPristine, errorMessage}) => {
@@ -44,7 +44,9 @@ function Input(props) {
 
 Input.defaultProps = { 
   type: "text",
-  hasFloatingLabel: true
+  hasFloatingLabel: true,
+  inputGroupClass: '',
+  isRequired: true
 }
 
 export default Input;
